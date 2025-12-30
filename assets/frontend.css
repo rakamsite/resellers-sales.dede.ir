@@ -188,13 +188,15 @@
 
 @media (min-width: 900px) {
   .rs-agent-card {
-    grid-template-columns: minmax(160px, 1fr) minmax(220px, 1.4fr) 100px;
-    grid-template-areas: "info details avatar";
+    grid-template-columns: 100px minmax(220px, 1.4fr) minmax(160px, 1fr);
+    grid-template-areas: "avatar details info";
   }
 
   .rs-agent-card-info {
-    border-left: 1px solid #e4e7ec;
-    padding-left: 20px;
+    border-left: 0;
+    padding-left: 0;
+    border-right: 1px solid #e4e7ec;
+    padding-right: 20px;
   }
   .rs-agent-avatar {
     width: 100px;
